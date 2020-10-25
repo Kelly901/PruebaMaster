@@ -7,11 +7,19 @@ app = Flask(__name__)
 
 def login():
 
-	if request.method == 'GET':
+	if request.method == 'POST':
+		nombre=request.form.get('nombre_usuario')
+		password=request.form.get('pasw_usuario')
+		return {
+			'nombre': nombre,
+			'nomrrrrrrr': password
 
+		}		
+	return {
+			'edad':'1',
+			'nombre':'holis'
 
-		return "HOLA MUNDO CRUEL"		
-		
+		}	
 	
 	
 
